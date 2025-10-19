@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="shortcut icon" href="image/file_00000000da946246bbff4fa3ba86c984-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="style/style.css"> <!-- External stylesheet for styling -->
+</head>
+<body>
+  <!-- Main Profile Card -->
+  <article data-testid="test-profile-card">
+    
+    <!-- Profile grid section: contains avatar and user details -->
+    <section class="Profile-grid-display">
+      
+      <!-- User profile picture and timestamp -->
+      <figure>
+        <img data-testid="test-user-avater" src="image/file_00000000da946246bbff4fa3ba86c984.png" alt="Profile Picture">
+        <figcaption>Profile Picture</figcaption>
+        <span class="test-time" data-testid="test-user-time"></span> <!-- Placeholder for dynamic time (filled via JS) -->
+      </figure>
+  
+      <!-- User details (name, role, bio, and social links) -->
+      <section>
+        <header>
+          <h2 data-testid="test-user-name">Goodluck Odalonu</h2>
+          <h3 data-testid="test-user-role">Frontend Developer</h3>
+        </header>
+    
+        <!-- User bio/summary -->
+        <p data-testid="test-user-bio">
+          Passionate about building accessible, user-friendly interfaces and solving problems with clean, maintainable code.
+        </p>
+  
+        <!-- Social media links -->
+        <nav data-testid="test-user-social-links">
+          <a data-testid="test-user-social-twitter" href="https://x.com/OdalonuGoodluck" target="_blank">Twitter</a>
+          <a data-testid="test-user-social-github" href="https://github.com/Goodluckodalonu" target="_blank">GitHub</a>
+          <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/goodluck-odalonu-ab0b2737a/" target="_blank">LinkedIn</a>
+        </nav>
+      </section>
+    </section>
+
+    <!-- Hobbies section -->
+    <section class="Hobbies">
+      <h3>Hobbies</h3>
+      <ul data-testid="test-user-hobbies">
+        <li>Coding</li>
+        <li>Music</li>
+        <li>Reading</li>
+        <li>Journal</li>
+        <li>Dancing</li>
+        <li>Photography</li>
+        <li>Gaming</li>
+        <li>Exploring</li>
+      </ul>
+    </section>
+  
+    <!-- Dislikes section -->
+    <section class="Dislikes">
+      <h3>Dislikes</h3>
+      <ul data-testid="test-user-dislikes">
+        <li>deliberation</li>
+        <li>Pretense</li>
+        <li>Dishonesty</li>
+        <li>manipulation</li>
+        <li>Hatred</li>
+        <li>Injustice</li>
+      </ul>
+    </section>
+  </article>
+
+  <!-- External JavaScript file -->
+  <script src="index.js"></script>
+</body>
+</html>
