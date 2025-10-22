@@ -3,75 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Card</title>
-  <link rel="shortcut icon" href="image/file_00000000da946246bbff4fa3ba86c984-removebg-preview.png" type="image/x-icon">
-  <link rel="stylesheet" href="style/style.css"> <!-- External stylesheet for styling -->
+  <title>About Me</title>
+  <link rel="shortcut icon" href="/image/logo.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="/stage1/style/style.css">
+  <link rel="stylesheet" href="/style/about.css">
 </head>
 <body>
-  <!-- main Profile Card -->
-  <article data-testid="test-profile-card">
+  <header data-testid="test-header">
+    <nav data-testid="test-navbar">
+      <img data-testid="test-logo" src="/image/logo.webp" alt="logo">
+      <ul data-testid="test-nav-links">
+        <li><a class="active" href="/index.html#about">About Me</a></li>
+        <li><a href="/stage1/contact-us.html#contact">Contact</a></li>
+        <li><a href="/stage1/profile.html#profile">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main data-testid="test-about-page">
     
-    <!-- Profile grid section: contains avatar and user details -->
-    <section class="Profile-grid-display">
-      
-      <!-- User profile picture and timestamp -->
-      <figure>
-        <img data-testid="test-user-avater" src="image/file_00000000da946246bbff4fa3ba86c984.png" alt="Profile Picture">
-        <figcaption>Profile Picture</figcaption>
-        <span class="test-time" data-testid="test-user-time"></span> <!-- Placeholder for dynamic time (filled via JS) -->
-      </figure>
-  
-      <!-- User details (name, role, bio, and social links) -->
-      <section>
-        <header>
-          <h2 data-testid="test-user-name">Goodluck Odalonu</h2>
-          <h3 data-testid="test-user-role">Frontend Developer</h3>
-        </header>
-    
-        <!-- User bio -->
-        <p data-testid="test-user-bio">
-          Passionate about building accessible, user-friendly interfaces and solving problems with clean, maintainable code.
-        </p>
-  
-        <!-- Social media links -->
-        <nav data-testid="test-user-social-links">
-          <a data-testid="test-user-social-twitter" href="https://x.com/OdalonuGoodluck" target="_blank">Twitter</a>
-          <a data-testid="test-user-social-github" href="https://github.com/Goodluckodalonu" target="_blank">GitHub</a>
-          <a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/goodluck-odalonu-ab0b2737a/" target="_blank">LinkedIn</a>
-        </nav>
-      </section>
+    <section data-testid="test-about-bio">
+      <h2>Bio</h2>
+      <p>My name is <b>Goodluck Odalonu</b>. I am a participant in the HNG program, i am passionate and tech driven person, curious to better know how tech and the internet works; am a self taught frontend developer; learning to become a better full stack web developer, am an undergradute of bs.c. Computer science in delta state university, abraka.. my curiosity has earned me a hands on experience and lessons with senior developers.</p>
     </section>
 
-    <!-- Hobbies section -->
-    <section class="Hobbies">
-      <h3>Hobbies</h3>
-      <ul data-testid="test-user-hobbies">
-        <li>Coding</li>
-        <li>Music</li>
-        <li>Reading</li>
-        <li>Journal</li>
-        <li>Dancing</li>
-        <li>Photography</li>
-        <li>Gaming</li>
-        <li>Exploring</li>
-      </ul>
+    <section data-testid="test-about-goals">
+      <h2>Goals in this program</h2>
+      <p>My goal is to improve my frontend skills, learn to collaborate effectively, build a strong portfolio and be part of any oppotunity and also help others in any way possible i can.</p>
     </section>
-  
-    <!-- Dislikes section -->
-    <section class="Dislikes">
-      <h3>Dislikes</h3>
-      <ul data-testid="test-user-dislikes">
-        <li>deliberation</li>
-        <li>Pretense</li>
-        <li>Dishonesty</li>
-        <li>manipulation</li>
-        <li>Hatred</li>
-        <li>Injustice</li>
-      </ul>
-    </section>
-  </article>
 
-  <!-- External JavaScript file -->
-  <script src="index.js"></script>
+    <section data-testid="test-about-confidence">
+      <h2>Areas of Low Confidence</h2>
+      <p>Imposter syndrome is my weakest area of confidence, i sometimes feel like giving up because i might not be able get a paying job; and i also sometimes struggle with time management and debugging complex JavaScript issues.</p>
+    </section>
+
+    <section data-testid="test-about-future-note">
+      <h2>Note to Future Self</h2>
+      <p>Note to my future self is to put God first in every part of your life, keep learning, stay consistent, and never stop building because progress is built daily, be always ready to learn, grow and persist no matter what, listen more than you speak and speak when necessary, always do the right thing at the right time and also remember never to give up and don't forget to hit the gym.</p>
+    </section>
+
+    <section data-testid="test-about-extra">
+      <h2>Extra Thoughts</h2>
+      <p>This experience has pushed me outside my comfort zone and taught me a lot about teamwork, and building in public, have met amazing people that taught me what life really is and challeged me to put further than my limit.</p>
+    </section>
+
+  </main>
 </body>
 </html>

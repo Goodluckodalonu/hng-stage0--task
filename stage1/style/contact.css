@@ -1,0 +1,156 @@
+main[data-testid="test-contact-page"] {
+  background-color: #eee;
+  max-width: 750px;
+  border-radius: 16px;
+  padding: 30px 30px 30px 50px;
+  margin: 6rem auto 0;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: center;
+  row-gap: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section[data-testid="test-get-in-touch"] {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+section[data-testid="test-get-in-touch"] h2 {
+  font-size: 2.3rem;
+}
+
+span[data-testid="test-phone"] span,
+span[data-testid="test-email"] span {
+ display: flex;
+ gap: 7px;
+}
+
+form[data-testid="test-contact-form"] h3 {
+  font-size: 2.6rem;
+  line-height: 2;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+small {
+  display: block;
+  margin: -7px 0 10px;
+}
+
+small[data-testid="test-contact-success-message"] {
+  font-size: 1.1em;
+}
+
+.error-msg {
+  color: red;
+}
+.success-msg {
+  color: green;
+}
+
+input {
+  width: 100%;
+  height: 42px;
+  color: hsl(0, 0%, 40%);
+  font-size: .9em;
+  letter-spacing: 1.01px;
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 8px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.107);
+  padding: 0 0 0 15px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  min-height: 90px;
+  padding-left: 15px;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 40%);
+  border: 1px solid hsl(0, 0%, 75%);
+  border-radius: 8px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.107);
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid blue;
+  background-color: hsl(0, 0%, 97%);
+}
+input:hover {
+  background-color: hsl(0, 0%, 97%);
+}
+
+button[data-testid="test-contact-submit"] {
+  background-color: hsl(0, 0%, 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .98em;
+  font-weight: 600;
+  color: #eee;
+  width: 100%;
+  height: 2.8rem;
+  margin: 17px auto 0;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all .4s ease;
+}
+
+button[data-testid="test-contact-submit"]:hover {
+  background-color: hsl(0, 0%, 25%);
+  transform: translateY(-3px);
+}
+
+@media screen and (max-width: 655px) {
+  main[data-testid="test-contact-page"] {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-content: center;
+  }
+
+  section[data-testid="test-get-in-touch"] {
+    margin: auto;
+    text-align: center;
+  }
+  
+  span[data-testid="test-phone"] span,
+  span[data-testid="test-email"] span {
+   justify-content: center;
+  }
+
+  form[data-testid="test-contact-form"] h3 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  main[data-testid="test-contact-page"] {
+    border-radius: 0;
+  }
+
+  section[data-testid="test-get-in-touch"] h2,
+  form[data-testid="test-contact-form"] h3 {
+    font-size: 2rem;
+  }
+
+  input {
+    height: 38px;
+  }
+  
+  textarea {
+    min-height: 65px;
+  }
+} 
